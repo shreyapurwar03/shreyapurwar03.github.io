@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <style>
+    .jumbotron
+    {
+        background-color:black;
+        font-style: initial;
+       height: 300px;
+    }
+    h1
+    {
+        font-style: oblique;
+        text-decoration: solid;
+        text-shadow: 0ex;
+        text-decoration-color: rgb(43, 226, 98);
+    }
+    
+    li a:hover
+    {
+      
+      font-weight: bolder;
+    }
+    img:hover
+    {
+      box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+      border-color: rgb(255, 47, 47);
+      border: 100px;
+      background-color: rgb(142, 255, 127);
+      border-left:100px ;
+     
+      
+    
+    }
+    .button
+    {
+      border-radius: 50px;
+      width: 100px;
+      background-color: rgb(127, 255, 138);
+      color: black;
+    }
+    
+    .glyphicon:hover
+    {
+       border:100px ; 
+       border-color: brown;
+      
+    }
+    #Shreya
+    {
+      animation-name: example;
+      animation-iteration-count:1;
+      animation-timing-function: ease-in-out;
+      position: relative;
+  
+  animation-duration: 4s;
+     
+
+    }
+    @keyframes example
+    {
+      from
+      {
+        left: 0px;
+      }
+      to
+      {
+        left:100px
+      }
+    }
+   
+  </style>
+  </head>
+  <body style="background-color:black ;">
+    
+    <div class="container-fluid">
+      <ul class="nav nav-pills bg bg-dark" >
+        <li class="nav-item">
+          <a href="#" class="nav-link text text-success"> <span class="glyphicon glyphicon-home">Home</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text text-success"> <span class="glyphicon glyphicon-search">Search</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link text text-success"><span class="glyphicon glyphicon-headphones">Your Library</span></a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link text text-success"> <span class="glyphicon glyphicon-bell"> Notifications <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill badge-success">
+               
+                99+</span></span></a>
+          </li>
+      </ul>
+      
+    <div class="container-fluid text text-center bg bg-dark">
+        <h1 style="color:rgb(203, 255, 192) ; position: relative; right:110px ; top: 50px; font-family:cursive ;">Music Bar </h1>
+        <img src="images/logo for Music Bar.png"
+        style="height:50px ; width: 50px; display: inline;">
+
+        <p class="text text-white" id="Shreya">Music is food for the soul</p>
+       
+        
+        
+      <div class="row bg bg-dark">
+        <div class="col-md-12 text text-right bg bg-dark">
+      
+            <button type="button" class="btn btn-success btn-sm">
+                <span class="glyphicon glyphicon-cog"></span> Upgrade
+              </button>
+      <button type="button" class="btn btn-success btn-sm">
+        <span class="glyphicon glyphicon-plus"></span> 
+        Follow
+      </button>
+      <div style="color:white ;" class="text text-left">
+      <i>Your Music Activity: Beats 90% Users</i>
+      <div class="progress" style="width:250px ;">
+       
+        <div class="progress-bar bg bg-success" role="progressbar" style="width:90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">90%</div>
+        <div class="progress-bar bg bg-danger" role="progressbar" style="width:10%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">10%</div>
+      </div>
+      
+    </div>
+     
+     
+        
+      </div>
+      </div>
+    </div>
+    <div class="form-group">
+     
+        <input type="text" class="bg bg-dark form-control " placeholder="Let's find something for your playlist ">
+        <span class="glyphicon glyphicon-pencil text tex-danger"></span>
+      </div>
+    <div class="container">
+        <h2 class=" container-fluid bg bg-success text text-centre" style="text-align:centre ; color: rgb(248, 250, 252);">#Trending<span class="glyphicon glyphicon-music"></span></h2>  
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+      
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner container-fluid">
+            <div class="item active text text-center">
+              <img src="https://static-koimoi.akamaized.net/wp-content/new-galleries/2015/03/piku-movie-posters-amitabh-bachchan-deepika-padukone-nawazuddin-2.jpg" alt="Los Angeles" style="width:300px; height:300px ;">
+              <div class="carousel-caption " style="text-align:centre ;">
+                <h3 style="text-align:left ;" class="bg bg-success text text-center"><b>A Melodious Road Journey</b></h3>
+                
+              </div>
+            </div>
+      
+            <div class="item">
+              <img src="https://upload.wikimedia.org/wikipedia/en/e/ec/Ae_Dil_Hai_Mushkil.jpg" alt="Playlist" style="width:300px;height:300px ;">
+              <div class="carousel-caption" style="text-align: centre;" >
+                
+                <h3 style="color:white ;" class="bg bg-success" ><b>Love,Friendship,Heartbreak And Music!</b></h3>
+              </div>
+            </div>
+          
+            <div class="item">
+              <img src="https://a10.gaanacdn.com/gn_img/albums/81l3Mye3rM/l3MypZJ13r/size_l.jpg" alt="New york" style="width:300px;height: 300px;">
+              <div class="carousel-caption" style="text-align:center ;">
+                
+                <h3 style="color:white ;"class="bg bg-success"><b>Offbeat,Geeky Tunes of Love</b></h3>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+        
+        
+    
+    <br>
+    <h3 style="color:white ;">Artists of the Month</h3>
+    <div class="row pt-3">
+      <div class="col-sm-3">
+        <div class="card text text-center bg bg-success ">
+          <img src="https://pbs.twimg.com/profile_images/1387822869619478540/lhocXKtV_400x400.jpg" class="rounded-circle" style="height:300px ;" />
+
+        </div>
+        <div class="card-footer bg bg-dark text" style="color:white ; font-family: Georgia, 'Times New Roman', Times, serif; text-align: center;">
+         <i>Arijit ki Awaaz</i> 
+         
+         <img src="https://icons-for-free.com/iconfiles/png/512/control+media+multimedia+music+options+play+play+button+player-1320185653542985681.png" 
+         height="50px" width="50px">
+         
+         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+          </svg>
+      </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="card text text-center bg bg-success ">
+          
+              <img src="https://palyvoice.com/wp-content/uploads/2022/10/Taylor-Swift-Midnights-e1666897618365.webp" class="rounded-circle" style="height:300px ;" />
+    
+            </div>
+            <div class="card-footer bg bg-dark text" style="color:white ; font-family: Georgia, 'Times New Roman', Times, serif; text-align: center;">
+             <i>Midnights With Taylor Swift</i> 
+             
+             
+             <img src="https://icons-for-free.com/iconfiles/png/512/control+media+multimedia+music+options+play+play+button+player-1320185653542985681.png" 
+             height="50px" width="50px">
+             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+              </svg>
+            
+          </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="card text text-center bg bg-success ">
+              
+                  <img src="https://assets.vogue.in/photos/5cf8e52fe3949d8c7b1b04ed/4:3/w_1000,h_750,c_limit/Diljit%20Dosanjh.jpg" class="rounded-circle" style="height:300px ;"/>
+        
+                </div>
+                <div class="card-footer bg bg-dark text" style="color:white ; font-family: Georgia, 'Times New Roman', Times, serif; text-align: center;">
+                 <i>Bhangra-De-Sajda with Diljit</i> 
+                 
+                 <img src="https://icons-for-free.com/iconfiles/png/512/control+media+multimedia+music+options+play+play+button+player-1320185653542985681.png" 
+                 height="50px" width="50px">
+                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                  </svg>
+              </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="card text text-center bg bg-success ">
+                  
+                      <img src="https://www.liveclefs.com/wp-content/uploads/2019/01/benny-dayal.jpg" class="rounded-circle" style="height:300px ;"/>
+            
+                    </div>
+                    <div class="card-footer bg bg-dark text" style="color:white ; font-family: Georgia, 'Times New Roman', Times, serif; text-align: center;">
+                     <i>Groove With Benny Dayal</i> 
+                     
+                     <img src="https://icons-for-free.com/iconfiles/png/512/control+media+multimedia+music+options+play+play+button+player-1320185653542985681.png" 
+                     height="50px" width="50px">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                      </svg>
+                  </div>
+                  </div>
+                </div>
+                <br>
+                <h3 style="color:white ;">Popular Albums</h3>
+                <div class="row pt-3">
+                    <div class="col-xs-3">
+                        <div class="card text text-center bg bg-success ">
+                          <img src="https://m.media-amazon.com/images/M/MV5BOTIyMTNkMWQtZDJlYi00OGJmLTliN2MtOGE0YjY4NzFiYTNmXkEyXkFqcGdeQXVyOTAzMTc2MjA@._V1_FMjpg_UX1000_.jpg" class="rounded-circle" style="height:250px ;" />
+                
+                        </div>
+                        <div class="card-footer bg bg-dark text" style="color:white ; font-family: Georgia, 'Times New Roman', Times, serif; text-align: center;">
+                         <i>Kabir Singh</i> 
+                         <br>
+                         <i>Various Artists</i>
+                         <br>
+                         
+                         <span class="glyphicon glyphicon-download"></span>
+                         
+                         <span class="glyphicon glyphicon-heart"></span>
+                         <img src="https://icons-for-free.com/iconfiles/png/512/control+media+multimedia+music+options+play+play+button+player-1320185653542985681.png"
+                                 height="40px" width="40px" class="bg bg-dark" >
+                      </div>
+                      </div>
+                      <div class="col-xs-3">
+                        <div class="card text text-center bg bg-success ">
+                          
+                            
+                              <img src="https://m.media-amazon.com/images/I/A1hhSiCLPSL._RI_.jpg" class="rounded-circle" style="height:250px ;" />
+                    
+                            </div>
+                            <div class="card-footer bg bg-dark text" style="color:white ; font-family: Georgia, 'Times New Roman', Times, serif; text-align: center;">
+                                <i>Yeh Jawaani Hai Deewani</i> 
+                                <br>
+                                <i>Pritam</i>
+                                <br>
+                             
+                                <span class="glyphicon glyphicon-download"></span>
+                         
+                                <span class="glyphicon glyphicon-heart"></span>
+                             <img src="https://icons-for-free.com/iconfiles/png/512/control+media+multimedia+music+options+play+play+button+player-1320185653542985681.png"
+                                     height="40px" width="40px" class="bg bg-dark" >
+                          </div>
+                        
+                
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="card text text-center bg bg-success ">
+                              
+                                
+                                  <img src="https://i.scdn.co/image/ab67616d0000b27303c03da08efb9051d8fae5d5" class="rounded-circle" style="height:250px ;" />
+                        
+                                </div>
+                                <div class="card-footer bg bg-dark text" style="color:white ; font-family: Georgia, 'Times New Roman', Times, serif; text-align: center;">
+                                    <i>Baar Baar Dekho</i> 
+                                    <br>
+                                    <i>Various Artists</i>
+                                    <br>
+                                    <span class="glyphicon glyphicon-download"></span>
+                         
+                                    <span class="glyphicon glyphicon-heart"></span>
+                                 <img src="https://icons-for-free.com/iconfiles/png/512/control+media+multimedia+music+options+play+play+button+player-1320185653542985681.png"
+                                         height="40px" width="40px" class="bg bg-dark" >
+                              </div>
+                            
+                    
+                            </div>
+                            <div class="col-xs-3">
+                                <div class="card text text-center bg bg-success ">
+                                  
+                                    
+                                      <img src="https://i.scdn.co/image/ab67616d0000b2730e26db222796cf4207425abc" class="rounded-circle" style="height:250px ;" />
+                            
+                                    </div>
+                                    <div class="card-footer bg bg-dark text" style="color:white ; font-family: Georgia, 'Times New Roman', Times, serif; text-align: center;">
+                                        <i>Lootera</i> 
+                                        <br>
+                                        <i>Amit Trivedi</i>
+                                        <br>
+                                     
+                                        <span class="glyphicon glyphicon-download"></span>
+                         
+                                        <span class="glyphicon glyphicon-heart"></span>
+                                     <img src="https://icons-for-free.com/iconfiles/png/512/control+media+multimedia+music+options+play+play+button+player-1320185653542985681.png"
+                                         height="40px" width="40px" class="bg bg-dark" >
+                                         
+                                    
+                                     
+                                  </div>
+                                
+                        
+                                </div>
+                        
+                </div>
+                <br>
+                <footer class="page-footer bg bg-success">
+
+                    <!-- Copyright -->
+                    <div class="footer-copyright text-center text text-white">
+                        <h3>Copyright © : Shreya Purwar</h3>
+                        <span class="glyphicon glyphicon-envelope">
+
+                        </span>
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                          </svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                          </svg>
+                      
+                      
+                    </div>
+                    <!-- Copyright -->
+                  
+                  </footer>
+
+            </body>
+            </html>
+
+               
+                
+                
+            
+              
+        
+        
+      
+
+
+    
